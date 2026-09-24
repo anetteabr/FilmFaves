@@ -1,0 +1,47 @@
+.movieBox {
+  width: 300px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.moviePoster {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.movieTitle {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.heart.fave {
+  color: red;
+}
+
+.heart.notFave {
+  color: grey;
+}
+
+@media (max-width: 1370px) {
+  .movieBox {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .movieBox {
+    width: 50%;
+  }
+
+  .movieTitle {
+    font-size: 2em;
+  }
+}

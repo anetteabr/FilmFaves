@@ -1,0 +1,33 @@
+.movieCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.carouselButton {
+  background: none;
+  margin: 0 20px;
+  border: none;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1400px) {
+  .movieList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .movieList {
+    grid-template-columns: 1fr;
+  }
+}
